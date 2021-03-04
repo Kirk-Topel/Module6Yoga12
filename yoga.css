@@ -1,0 +1,69 @@
+* {box-sizing: border-box}
+body
+{background-color: #40407A;margin: 0;
+font-family: Verdana,Arial,sans-serif}
+#wrapper {background-color: #F5F5F5; padding: 2em;
+}
+nav {position:fixed;top:0; left:0; z-index:9999;width:100%;
+    height: auto;text-align: right; background-color: #F5F5F5;margin: 0;
+    padding-right:0;
+}
+    nav ul{margin: 0;padding-right: 2em; font-size: 1.2em;}
+    nav li{display: inline;width:30%;}
+    nav a{text-decoration-line: none;}
+    nav a:link{color:#3F2860;}
+    nav a:visited{color:#497777;}
+    nav a:hover{color:#A26100;}
+header {color: #FFFFFF;font-size: 90%;min-height: 200px;}
+    header a:link{color:#FFFFFF; text-decoration-line: none;}
+    header a:visited{color:#FFFFFF;text-decoration-line: none;}
+    header a:hover {color:#8F92B2;text-decoration-line: none;}
+    header a {transition:color 10s ease-out;}
+.home {height: 20vh;padding-top: 2em; padding-left: 10%;
+    background-image: url("sunrise.jpg"); background-size:100% 100%;}
+.content {height: 20vh;padding-top: 2em;padding-left: 10%;}
+#section {padding-left: .5em;padding-right:.5em;}
+#flow {display: block;}
+#mathero {height: 300px; background-image: url("yogamat.jpg");background-size: 100% 100%;
+         background-repeat: no-repeat;display: none;padding-bottom: 1em;}
+#loungehero {height: 300px; background-image: url("yogalounge.jpg");background-size: 100% 100%;
+         background-repeat: no-repeat;display:none; padding-bottom: 1em;}
+p {font-family: Verdana, Arial, sans-serif;}
+h2 {margin:0;}
+li {font-size: 90%;}
+dd {font-size: 90%;}
+.clearleft {clear:left;}
+footer {font-size: small;
+        font-style: italic;
+        text-align: center;
+        clear: right;}
+table {border: 1px solid #40407A; margin-bottom:1em;
+    min-width:400px;border-collapse: collapse;
+}
+td,th{padding: .5em;border: 1px solid #40407A;}
+td {;}
+tr:nth-of-type(even){background-color: #D7E8E9}
+caption {margin: 1em;font-size: 120%;font-weight: bold;}
+form {display: flex; flex-flow: column nowrap;}
+    input, datalist textarea {margin-bottom: .5em;}
+audio {margin-bottom: 1em;}
+@media(min-width:600px){
+    nav ul{display:flex;flex-direction: row;flex-wrap: nowrap;justify-content: flex-end;}
+    nav li {width: 7em;}
+    section {padding-left: 2em; padding-right: 2em;}
+    #mathero{display: block; padding-bottom: 1em;}
+    #loungehero{display: block;padding-bottom: 1em;}
+    #flow {display: flex; flex-direction: row;}
+}
+form {display: grid;grid-gap: 1em;width: 60%;max-width: 40em;grid-template-columns: 9em 1fr;
+    grid-template-rows: auto;
+}
+input [type="submit"] {grid-column: 2/5;width: 9em;}
+@media(min-width:1024px){
+    header {font-size: 120%;}
+    nav {font-weight: bold;}
+    #home {height: 50vh;padding-top: 5em;padding-left:8em;}
+    #content {height: 30vh; padding-top: 2em; padding-left:8em;}
+    #wrapper {margin: auto; width: 80%;}
+
+}
